@@ -21,7 +21,7 @@ html {
 
 @font-face {
     font-family: Figtree-medium;
-    src: url(..//assets/fonts/static/Figtree-Medium.ttf);
+    src: url(../assets/fonts/static/Figtree-Medium.ttf);
 }
 
 body {
