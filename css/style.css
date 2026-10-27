@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* fuentes */
+@font-face {
+    font-family: Figtree-bold;
+    src: url(/assets/fonts/static/Figtree-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Figtree-medium;
+    src: url(/assets/fonts/static/Figtree-Medium.ttf);
+}
+
+body {
+    background-color: var(--yelow);
+    font-family: Figtree-medium;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+:root {
+    /* colores */
+    --yelow: #F4D04E;
+    --gray-950: #111111;
+    --gray-500: #6b6b6b;
+    --white: #fff;
+    /* espaciado */
+    --lh-150: 1.5;
+    --p-300: 2.4rem;
+    --p-150: 1.2rem;
+    --p-100: 0.8rem;
+    --p-50: 0.5rem;
+}
+
+/* tipografia */
+.text-preset {
+    line-height: var(--lh-150);
+}
+
+.text-preset-bold {
+    font-family: Figtree-bold;
+    line-height: var(--lh-150);
+}
+
+.card {
+    width: 32.7rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border: 1px solid var(--gray-950);
+    border-radius: 2rem;
+    box-shadow: 8px 8px 0 black;
+    gap: var(--p-300);
+    padding: var(--p-300);
+}
+
+.blog-image{
+    width: 27.9rem;
+}
+
+.blog-image img {
+    border-radius: 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--p-150);
+}
+
+.category {
+    background-color: var(--yelow);
+    padding: var(--p-50) var(--p-150);
+    font-size: var(--p-150);
+    border-radius: .4rem;
+}
+
+.publish-date {
+    font-size: var(--p-150);
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.title:hover{
+    color: var(--yelow);
+    cursor: pointer;
+}
+
+.description{
+    font-size: 1.4rem;
+    color: var(--gray-500);
+}
+.author{
+    display: flex;
+    align-items: center;
+    gap: var(--p-150);
+}
+.userpic{
+    width: 3.2rem;
+}
+.author-name{
+    font-size: 1.4rem;
+}
